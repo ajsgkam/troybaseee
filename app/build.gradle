@@ -2,8 +2,30 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.ajsgkam'
+//group='com.github.ajsgkam'
+//version = "1.0.2"
+//artifactId = "troybaseee"
+//publishing {
+//    publications {
+//        create<MavenPublication>("maven") {
+//            groupId = "com.github.ajsgkam"
+//            artifactId = "troybaseee"
+//            version = "1.0.2"
+//
+//            from(components["kotlin"])
+//        }
+//    }
+//}
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        pom.groupId = "com.github.ajsgkam"
+//        pom.artifactId = "troybaseee"
+//        pom.version = "1.0.2"
+//    }
+//}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
